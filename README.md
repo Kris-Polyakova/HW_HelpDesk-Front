@@ -1,0 +1,1 @@
+![CI](https://github.com/Kris-Polyakova/HW_HelpDesk-Front/actions/workflows/web.yml/badge.svg)

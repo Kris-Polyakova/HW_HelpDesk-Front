@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.form-container {
+    position: fixed;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    opacity: 0.5;
+    z-index: -1
+}
+
+.form {
+    background-color: white;
+    width: 500px;
+    height: 350px;
+    border: 1px solid salmon;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delete-ticket-form {
+    width: 550px;
+    height: 200px;
+}
+
+.form-title {
+    margin: 0;
+}
+
+.inputs-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-field {
+    border: 1px solid salmon;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.form-field:focus {
+    outline: 1px solid salmon;
+}
+
+
+.short-description-input {
+    min-height: 40px;
+}
+
+.full-description-input {
+    height: 60px;
+    resize: none;
+}
+
+.btns-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.help-desk {
+    width: 1000px;
+    min-height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 50px;
+    gap: 15px;
+}
+
+.control-btn {
+    width: 111px;
+    height: 40px;
+    font-size: 16px;
+    align-self: flex-end;
+    background-color: white;
+    border: 1px solid salmon;
+}
+
+.control-btn:hover {
+    background-color: rgb(255, 196, 189);
+    cursor: pointer;
+}
+
+.control-btn:active {
+    background-color: rgb(255, 156, 145);
+}
+
+.tiskets-container {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid salmon;
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid salmon;
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket:last-child {
+    border-bottom: none;
+    box-sizing: border-box;
+}
+
+.short-ticket {
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.short-ticket:hover {
+    background-color: rgb(255, 235, 232);
+    cursor: pointer;
+}
+
+.btn {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0 0.5px 2px 0;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid salmon;
+    color: salmon;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.btn:hover {
+    background-color: rgb(255, 196, 189);
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: rgb(255, 156, 145);
+}
+
+.btn_checked {
+    position: relative;
+    background-color: salmon;
+    outline: 1px solid white;
+    outline-offset: -2px;
+    color: white;
+}
+
+.btn_checked::after {
+    content: "✔";
+    position: absolute;
+    top: 3px;
+    left: 7px;
+}
+
+.full-ticket {
+    padding: 10px 10px 10px 48px;
+}
+
+.short-description, .full-description, .date {
+    font-size: 17px;
+}
+
+.short-description-container {
+    width: 650px;
+}
+
+.full-ticket {
+    border-top: 1px dashed rgb(255, 156, 145);
+}
+
+._hidden{
+    display: none;
+}
