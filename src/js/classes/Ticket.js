@@ -1,6 +1,6 @@
 export class Ticket {
   constructor(changeForm, deleteForm, api) {
-    this.container = document.querySelector(".tiskets-container");
+    this.container = document.querySelector(".tiсkets-container");
     this.changeForm = changeForm;
     this.deleteForm = deleteForm;
     this.api = api;

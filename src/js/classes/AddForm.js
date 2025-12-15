@@ -4,6 +4,7 @@ export class AddForm extends Form {
   constructor(formSelector, api) {
     super(formSelector, api);
     this.okBtn.addEventListener("click", (e) => {
+      e.preventDefault();
       this.okHandler(e);
     });
   }

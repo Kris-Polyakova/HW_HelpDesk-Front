@@ -15,6 +15,7 @@ export class Form {
   hide() {
     this.container.classList.add("_hidden");
     this.container.removeEventListener("click", this.clickListener);
+    this.form.reset();
   }
 
   clickListener = (e) => {
