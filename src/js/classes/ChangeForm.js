@@ -6,6 +6,7 @@ export class ChangeForm extends Form {
     this.nameInput = this.form.querySelector(".short-description-input");
     this.descriptionInput = this.form.querySelector(".full-description-input");
     this.okBtn.addEventListener("click", (e) => {
+      e.preventDefault();
       this.okHandler(e);
     });
   }
